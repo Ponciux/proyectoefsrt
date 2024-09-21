@@ -16,13 +16,13 @@ function Contacto() {
                             <a href="#" className="clr"><i className="bx bxl-instagram-alt"></i></a>
                             <a href="#"><i className="bx bxl-facebook"></i></a>
                             <a href="#"><i className="bx bxl-twitter"></i></a>
-                            <a href="#"><i className="bx bxl-github"></i></a>
+                            <a href="#"><i className="bx bxl-telegram"></i></a>
                             <a href="#"><i className="bx bxl-google"></i></a>
                         </div>
 
                         <div className="details">
                             <div className="main-d">
-                                <a href="#"><i className="bx bxs-location-plus"></i>Jr. Los Horizontes 111</a>
+                                <a href="https://maps.app.goo.gl/dCTj6qAHNRB4Kegi8"><i className="bx bxs-location-plus"></i>Av. Armendáriz 100, Lima</a>
                             </div>
                             <div className="main-d">
                                 <a href="#"><i className="bx bx-mobile-alt"></i>999 555 222</a>

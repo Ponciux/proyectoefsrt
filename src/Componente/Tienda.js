@@ -3,13 +3,13 @@ import hamb1 from '../img/hmbg1.jpg';
 import hamb2 from '../img/hmbg2.jpg';
 import hamb3 from '../img/hmbg3.jpg';
 import hamb4 from '../img/hmbg4.jpg';
-import './Tienda.css'; // Asegúrate de ajustar la ruta del archivo de estilos
-
+import './Tienda.css'; 
+//Evento carrusel
 const imagenes = [
     { src: hamb1, alt: 'Hamburguesa de carne', nombre: 'Hamburguesa de carne', descripcion: 'Granjera Simple', precio: 'S/.25.00' },
-    { src: hamb2, alt: 'Hamburguesa de Duo Carne', nombre: 'Hamburguesa de Duo Carne', descripcion: 'Blue Label', precio: 'S/.35.00' },
-    { src: hamb3, alt: 'Hamburguesa Vegana', nombre: 'Hamburguesa Vegana', descripcion: 'Cuarto de libra vegan', precio: 'S/.27.00' },
-    { src: hamb4, alt: 'Hamburguesa Vegana Veggie Clásico', nombre: 'Hamburguesa Vegana', descripcion: 'Veggie Clásico', precio: 'S/.25.00' }
+    { src: hamb2, alt: 'Hamburguesa de Duo Carne', nombre: 'Hamburguesa de Duo Carne', descripcion: 'La Poderosa', precio: 'S/.35.00' },
+    { src: hamb3, alt: 'Hamburguesa Vegana', nombre: 'Hamburguesa Vegana', descripcion: 'Cuarto de libra vegana', precio: 'S/.27.00' },
+    { src: hamb4, alt: 'Hamburguesa Vegana Veggie Clásico', nombre: 'Hamburguesa Vegana', descripcion: 'Veggie Clásico', precio: 'S/.30.00' }
 ];
 
 function Tienda() {

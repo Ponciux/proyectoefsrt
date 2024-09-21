@@ -13,8 +13,8 @@ function Contenedor() {
 
                 <div className="container-box">
                     <img alt="Contenedor" src={imgburger}/>
-                    <h3>Jr. Los Horizontes 111</h3>
-                    <a href="https://maps.app.goo.gl/Tz6HXGxVyU1vJjLX9">Obtener dirección</a>
+                    <h3>Av. Armendáriz 100, Lima</h3>
+                    <a href="https://maps.app.goo.gl/dCTj6qAHNRB4Kegi8">Obtener dirección</a>
                 </div>
 
                 <div className="container-box">
