@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/proyectoefsrt/static/css/main.26bb9f3f.css",
+    "main.js": "/proyectoefsrt/static/js/main.c84daf8f.js",
+    "static/js/453.edeae866.chunk.js": "/proyectoefsrt/static/js/453.edeae866.chunk.js",
+    "static/media/hamburguesa.png": "/proyectoefsrt/static/media/hamburguesa.656b761655e8b5ef5de6.png",
+    "static/media/icono burger.png": "/proyectoefsrt/static/media/icono burger.09bfd5f456b580c0f788.png",
+    "static/media/Debarrio.jpg": "/proyectoefsrt/static/media/Debarrio.85f57a3cc7b8b02dc9f5.jpg",
+    "static/media/hmbg1.jpg": "/proyectoefsrt/static/media/hmbg1.9101999ae87cc0deebf4.jpg",
+    "static/media/hmbg3.jpg": "/proyectoefsrt/static/media/hmbg3.8d835bca825ceb82368f.jpg",
+    "static/media/hmbg4.jpg": "/proyectoefsrt/static/media/hmbg4.85660be2057618284a35.jpg",
+    "static/media/hmbg2.jpg": "/proyectoefsrt/static/media/hmbg2.f5541d44f88eb0755ea4.jpg",
+    "index.html": "/proyectoefsrt/index.html",
+    "main.26bb9f3f.css.map": "/proyectoefsrt/static/css/main.26bb9f3f.css.map",
+    "main.c84daf8f.js.map": "/proyectoefsrt/static/js/main.c84daf8f.js.map",
+    "453.edeae866.chunk.js.map": "/proyectoefsrt/static/js/453.edeae866.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26bb9f3f.css",
+    "static/js/main.c84daf8f.js"
+  ]
+}
