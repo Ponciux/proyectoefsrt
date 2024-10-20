@@ -82,10 +82,17 @@
     font-weight: 600;
 }
 
+.in-text .s-btn .btn {
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    padding: 12px 20px; /* Ajusta el padding para aumentar el tamaño del botón */
+    border-radius: 3rem; /* Añade un borde redondeado si lo deseas */
+    
+}
+
 .in-text .s-btn a {
     font-family: 'Poppins', sans-serif;
     display: inline-block;
-    padding: 9px 23px;
+    padding: 9px 20px;
     background: var(--bg-color);
     color: var(--main-color);
     font-size: 12px;

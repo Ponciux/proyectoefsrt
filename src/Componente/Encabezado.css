@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     scroll-padding-top: 3rem;
 }
 
-:root{
+:root {
     --main-color: #f9ad08;
     --text-color: #fff;
     --other-color: #212121;
@@ -27,7 +27,7 @@ body {
     color: var(--text-color);
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,21 +36,24 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: #212121;
     padding: 30px 14%;
     transition: all 0.5s ease;
 }
 
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(#ff007a 15%, #ffaa00 25%, #61f908 40%,#ffff00 30%);
+    background: linear-gradient(#ff007a 15%, #ffaa00 25%, #61f908 40%, #ffff00 30%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;    font-family: 'Script MT';
-    font-weight: 2000px;
+    color: transparent;    
+    font-family: 'Script MT';
+    font-weight: 900;
     margin: 0%;
     line-height: 1.5em;
+    cursor: pointer;
 }
 
 .log2 {
@@ -69,7 +72,7 @@ header{
     color: var(--main-color);
 }
 
-.navlist{
+.navlist {
     display: flex;
 }
 
@@ -79,18 +82,18 @@ header{
     font-size: var(--p-font);
     font-weight: 600;
     margin: 0 30px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
-.navlist a:hover{
+.navlist a:hover {
     color: var(--main-color);
 }
 
-.navlist a:active{
+.navlist a:active {
     color: var(--main-color);
 }
 
-.nav-icons{
+.nav-icons {
     display: flex;
     align-items: center;
     padding: 8px 15px;
@@ -99,16 +102,16 @@ header{
     box-shadow: #ff6e0d 0px 1px 25px;
 }
 
-.nav-icons i{
+.nav-icons i {
     vertical-align: middle;
     font-size: 25px;
     color: var(--bg-color);
     margin-right: 8px;
     margin-left: 5px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 32px;
     color: var(--bg-color);
     z-index: 100001;
@@ -121,11 +124,226 @@ header{
     color: var(--text-color);
 }
 
-#menu-icon:hover{
+#menu-icon:hover {
     transform: scale(1.1);
     color: var(--text-color);
 }
+/*BARRA SCROLL*/
 
+/* Cambiar el color de la barra de desplazamiento */
+.modal::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+.modal::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de la pista */
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background: #888; /* Color del pulgar */
+}
+
+/* Estilos del Formulario */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    top: 10%; /* Ajusta la posición vertical */
+    right: 10%; /* Ajusta la posición horizontal */
+    width: 300px; /* Cambia el ancho a un tamaño más pequeño */
+    max-height: 70vh; /* Limita la altura máxima */
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    overflow: auto; /* Permite el desplazamiento si es necesario */
+    padding: 10px; /* Ajusta el espaciado interno */
+}
+
+.modal.visible {
+    display: block; /* Mostrar el modal si es visible */
+}
+.botones-container {
+    display: flex;                /* Usar flexbox */
+    justify-content: space-between; /* Espaciado entre los botones */
+    margin-top: 30px;
+   
+}
+
+/* Estilo específico para el botón "Descargar Pedido" */
+.descargar-pedido {
+    display: block;              /* Asegura que esté en un bloque para centrarlo */
+    margin: 20px auto;          /* Centrarlo horizontalmente */
+}
+
+/* Centrar el logo */
+.logo2 {
+    text-align: center;          /* Centrar el texto dentro del contenedor */
+    padding: 5%;
+    background: linear-gradient(#ff007a 15%, #ffaa00 25%, #61f908 40%, #ffff00 30%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;    
+    font-family: 'Script MT';
+}
+.log3 {
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 11px;
+    margin-top: 0%;
+}
+
+button { 
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #f9cd08; /* Verde más oscuro al pasar el mouse */
+}
+
+.modal form {
+    background: #212121;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho completo en dispositivos pequeños */
+}
+
+.modal h2 {
+    
+    text-align: center; /* Centrar el título */
+    color: #f9cd08;
+}
+
+.modal input[type="text"],
+.modal input[type="email"],
+.modal input[type="number"],
+.modal textarea,
+.modal select {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre los campos */
+    border: 1px solid #ffff00; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.8); /* Resplandor amarillo */
+}
+
+.modal textarea {
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+.modal button {
+    background-color: #f9cd08; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    width: calc(50% - 5px); /* Ancho del botón (dos botones en fila) */
+    transition: background-color 0.3s; /* Transición de color */
+}
+
+.modal button:hover {
+    background-color: #3c3c3c; /* Color del botón al pasar el mouse */
+}
+
+.hamburguesas-lista {
+    margin-top: 30px; /* Espacio superior */
+    
+    border-top: 1px solid #f9ad08; /* Línea separadora */
+    padding-top: 4px; /* Espacio entre el borde y el contenido */
+    padding-bottom: 10%;
+}
+
+.hamburguesas-lista div {
+    margin-bottom: 5px; /* Espacio entre las hamburguesas */
+    font-weight: bold; /* Resaltar el texto */
+    font-size: 0.9rem; /* Reducir el tamaño del texto de la lista de hamburguesas */
+    color: #f9ad08; /* Cambiar el color del texto a negro */
+}
+
+
+.hamburguesas-lista p {
+    color: #f9ad08; /* Cambiar el color del texto "No hay hamburguesas en el pedido" a negro */
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+}
+
+.modal h4 {
+    color: #f9ad08; /* Cambiar el color del titulo cremas*/
+    margin-bottom: 8px;
+}
+
+.cremas-lista label {
+    color: #f9ad08; 
+    margin-left: 10px;
+}
+.cremas-lista input[type="checkbox"]:checked {
+    accent-color: #f9ad08; /* Cambia el color del checkbox marcado */
+}
+
+.titulo-pedido {
+    color: #f9ad08;
+    text-align: center; /* Centrar el texto del título */
+    margin: 20px;
+}
+
+.lista-hamburguesas {
+    display: flex; /* Usar flexbox para la lista de hamburguesas */
+    flex-direction: column; /* Disponer los elementos en columna */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.hamburguesa-item {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-start; /* Alinear al inicio */
+    padding: 10px; /* Espaciado interno */
+    background-color: #212121; /* Fondo oscuro */
+    color: #f9cd08; /* Color de texto blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.hamburguesa-info {
+    display: flex; /* Usar flexbox para las hamburguesas */
+    justify-content: space-between; /* Espacio entre la hamburguesa y el botón */
+    width: 100%; /* Ancho completo */
+}
+
+.nombre-hamburguesa {
+    font-weight: bold; /* Resaltar el nombre de la hamburguesa */
+}
+
+.cremas-hamburguesa {
+    margin-top: 5px; /* Espacio arriba de las cremas */
+    color: #f9ad08; /* Color para las cremas */
+    display: flex; /* Usar flexbox para las cremas */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+.hamburguesa-item .eliminar-button {
+    margin-left: auto; /* Empujar el botón hacia la derecha */
+    background-color: #f44336; /* Color rojo para el botón */
+    color: white; /* Color del texto blanco */
+    padding: 8px 12px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.hamburguesa-item .eliminar-button:hover {
+    background-color: #d32f2f; /* Color más oscuro al pasar el mouse */
+}
+
+/* Media queries */
 @media (max-width: 1545px) {
     header {
         padding: 22px 4%;
@@ -148,7 +366,7 @@ header{
     :root {
         --big-font: 4.5rem;
         --h2-font: 3.3rem;
-        --p-font:1.1rem;
+        --p-font: 1.1rem;
     }
     .home {
         height: 85vh;
@@ -162,7 +380,7 @@ header{
     .navlist {
         position: absolute;
         top: -1000px;
-        left:0;
+        left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -179,28 +397,12 @@ header{
     .navlist.open {
         top: 100%;
     }
-    .home-img img {
-        width: 100%;
-        max-width: 470px;
-        height: auto;
-    }
 }
 
 @media (max-width: 1045px) {
     :root {
         --big-font: 3.3rem;
         --h2-font: 2rem;
-    }
-    .home-img img {
-        width: 100%;
-        max-width: 470px;
-        height: auto;
-    }
-    .home {
-        height: 70vh;
-    }
-    .container-box{
-        margin-top: 0.2rem;
     }
 }
 
@@ -209,71 +411,9 @@ header{
         --big-font: 5.3rem;
         --h2-font: 2rem;
     }
-    .home{
-        grid-template-columns: 1fr;
-        height: 135vh;
-        margin-bottom: 5rem;
-    }
-    .home-text {
-        padding-top: 60px;
-    }
-    .home-img {
-        text-align: center;
-    }
-    .about{
-        grid-template-columns: 1fr;
-    }
-    .about-img {
-        text-align: center;
-    }
 }
 
-@media (max-width: 678px) {
-    .home{
-        grid-template-columns: 1fr;
-        height: 118vh;
-        margin-bottom: 15rem;
-    }
-}
-
-@media (max-width: 665px) {
-    .home{
-        grid-template-columns: 1fr;
-        height: 118vh;
-        margin-bottom: 20rem;
-    }
-}
-@media (max-width: 520px) {
-    
-    .social i {
-        margin: 0 10px;
-    }
-    .contac-text p {
-        max-width: 100%;
-    }
-    .details {
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 475px) {
-    :root {
-        --big-font:2.8rem;
-        --h2-font: 2rem;
-    }
-}
-
-@media (max-width: 440px) {
-    .home {
-        height: 20hv;
-        gap: 0.1rem;
-    }
-    .btn2 {
-        margin-top: 10px;
-    }
-}
-
-.scroll{
+.scroll {
     position: fixed;
     bottom: 2.2rem;
     border-top: 2rem;
@@ -286,3 +426,4 @@ header{
     padding: 10px;
     border-radius: 2rem;
 }
+
